@@ -100,3 +100,23 @@ public static void search()
 			}
 				
 		}
+
+public static void delete()
+	{
+		
+		System.out.println("Enter the phone number to be deleted");
+		int n=scan.nextInt();
+		
+		if(d1.containsKey(n))
+		{
+			d1.remove(n);
+			System.out.println(n + " has been deleted from the phone book");
+		}
+		else
+		{
+		
+		System.out.println("The desired number is not found in the phone book");
+		
+		}
+
+	}
