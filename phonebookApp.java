@@ -62,4 +62,20 @@ public class phonebookApp
 				}
 		
 	}
+
+
+	public static void display()
+	{
+		int i=1;
+		System.out.println("\n \t \t \t Contacts");
+		
+		for(Map.Entry<Integer, in> b : d1.entrySet())
+		{		
+			int a = b.getKey();
+			in a2 = b.getValue();
+						
+			System.out.println("\n" + i+"." + " "+ a + " " + a2.name + " " + a2.address + " " + a2.email);
+			i++;
+		}
+	}
 	
