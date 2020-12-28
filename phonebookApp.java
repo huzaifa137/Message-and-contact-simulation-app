@@ -79,3 +79,24 @@ public class phonebookApp
 		}
 	}
 	
+
+public static void search()
+	{
+		
+		System.out.println("\n Enter the phonenumber you need to  search");
+		
+			
+			int hd=scan.nextInt();
+			
+			if(d1.containsKey(hd))
+			{
+				System.out.println("\n The phonenumber is present in the phonebook");
+				
+			}
+			
+			else
+			{
+				System.out.println("The phonenumber is not available");
+			}
+				
+		}
