@@ -120,3 +120,60 @@ public static void delete()
 		}
 
 	}
+
+
+	public static void main(String[] args) {
+
+		System.out.println("\n \t \t \t Welcome to phone book app");
+			
+		int ct;
+		System.out.println("\n Do you want to you use phonebook app,enter YES or NO for next step");
+		String nm =scan.nextLine();
+			
+		if(nm.equalsIgnoreCase("YES") || nm.equalsIgnoreCase("Y"))
+		{
+			
+			do {
+				System.out.println("\n \t Menu"
+						+ "\n1.create a new contact"
+						+ "\n2.Display list of contacts"
+						+ "\n3.Search contact"
+						+ "\n4.Delete contact "
+						+ "\n5.exit");
+				
+				System.out.println("\n please make a selection from the above");
+				 ct=scan.nextInt();
+				 
+				 switch(ct)
+					{
+					case 1:
+						insert();
+						break;
+						
+					case 2:
+						display();
+						break;
+						
+					case 3:
+						search();
+						break;
+					
+					case 4:
+						delete();
+						break;
+						
+					default :
+						System.out.println("Thank you for using Huzaifa Technologies");
+						break;
+					}
+			}while(ct!=5);
+		}
+		else
+		{
+			System.out.println("please select yes or 'Y 'if you need to use phone book");
+			System.out.println("Thank you");
+		}
+	}	
+			
+}
+	
